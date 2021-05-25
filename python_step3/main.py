@@ -1,0 +1,1 @@
+print("This is the main script of python 3 course")
