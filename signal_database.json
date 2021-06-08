@@ -1,0 +1,24 @@
+{
+    "services": [
+        {
+            "title": "ECU Reset",
+            "id": "11"
+        },
+        {
+            "title": "Security Access",
+            "id": "27"
+        },
+        {
+            "title": "Tester Present",
+            "id": "3E"
+        },
+        {
+            "title": "Request Download",
+            "id": "34"
+        },
+        {
+            "title": "Transfer Data",
+            "id": "36"
+        }
+    ]
+}

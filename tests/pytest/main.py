@@ -1,8 +1,11 @@
-from rock_paper_scissor_game import test_decide_who_will_win
+from tests.pytest.rock_paper_scissor_game import RandomClass
+from tests.pytest.test_play_game import test_play_game
+
 
 def main():
-    print("Hello")
-    test_decide_who_will_win()
+
+    class_random = RandomClass()
+    print(play_game())
 
 
 if __name__ == "__main__":
