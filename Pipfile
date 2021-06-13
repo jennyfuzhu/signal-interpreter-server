@@ -8,6 +8,8 @@ flask = "*"
 
 [dev-packages]
 pytest = "*"
+pycodestyle = "*"
+pylint = "*"
 
 [requires]
 python_version = "3.8"

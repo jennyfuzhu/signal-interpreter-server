@@ -11,7 +11,7 @@ def parse_arguments():
     return parser.parse_args()
 
 
-def main():
+def main(): # pylint: disable=missing-function-docstring
     args = parse_arguments()
     print(args.file_path)
 

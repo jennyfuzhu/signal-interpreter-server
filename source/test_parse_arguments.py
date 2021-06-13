@@ -12,4 +12,3 @@ def test_parse_arguments(mock_parse_args, mock_add_argument):
     assert parse_arguments() == MockArgs
     mock_add_argument.assert_called_with("--file_path")
     mock_parse_args.assert_called_once()
-
