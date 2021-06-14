@@ -1,9 +1,11 @@
-from source.routes import interpret_signal, request
-from source.routes import signal_interpreter_app, JsonParser
+"""test_interpret_signal.py file"""
+
 from unittest.mock import patch
+from source.routes import signal_interpreter_app, JsonParser
 
 
 def test_interpreter_signal():
+    """Test the interpret signal"""
     signal_interpreter_app.testing = True
     signal_interpreter_app_ins = signal_interpreter_app.test_client()
     with patch.object(JsonParser, 'get_signal_title',

@@ -1,4 +1,4 @@
-# routes.py
+"""Routes.py"""
 
 from flask import Flask, request, jsonify
 from source.json_parser import JsonParser
@@ -10,6 +10,7 @@ signal_interpreter_app = Flask(__name__)
 
 @signal_interpreter_app.route("/", methods=["POST"])
 def interpret_signal():
+    """Return json"""
     data = request.get_json()
     response = json_parser.get_signal_title(data['signal'])
     json_return = jsonify(response)
