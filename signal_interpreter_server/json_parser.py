@@ -1,11 +1,15 @@
-"""Json_parser.py"""
+"""Json_parser.py
+    Style check 100%
+"""
 import json
 
 
 class JsonParser:
     """Class which contains methods of json functions"""
+
     def __init__(self):
         self.data = None
+        self.signal_title = ""
 
     def load_file(self, file_path):
         """Load files with the path to the file as an argument"""
@@ -20,6 +24,6 @@ class JsonParser:
         # loop through all services in self.data
         # if the service ID is the identifier, return the title
         for names in self.data['services']:
-            if str(identifier) == names['id']:
-                signal_title = names['title']
-        return signal_title
+            if names['id'] == identifier:
+                self.signal_title = names['title']
+        return self.signal_title

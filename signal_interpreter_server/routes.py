@@ -1,7 +1,9 @@
-"""Routes.py"""
+"""Routes.py
+    Style check
+"""
 
 from flask import Flask, request, jsonify
-from source.json_parser import JsonParser
+from signal_interpreter_server.json_parser import JsonParser
 
 json_parser = JsonParser()
 

@@ -1,11 +1,14 @@
 """test_interpret_signal.py file"""
 
 from unittest.mock import patch
-from source.routes import signal_interpreter_app, JsonParser
+
+import pytest
+
+from signal_interpreter_server.routes import signal_interpreter_app, JsonParser
 
 
-def test_interpreter_signal():
-    """Test the interpret signal"""
+def test_interpreter_signal_context_manager():
+    """Test the interpret signal context manager"""
     signal_interpreter_app.testing = True
     signal_interpreter_app_ins = signal_interpreter_app.test_client()
     with patch.object(JsonParser, 'get_signal_title',
@@ -15,3 +18,5 @@ def test_interpreter_signal():
             response = client.post('/', json=test_payload)
             mock_get_signal_title.assert_called_with('36')
             assert response.get_json() == 'Transfer Data'
+
+
