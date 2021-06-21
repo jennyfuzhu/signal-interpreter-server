@@ -1,5 +1,5 @@
-"""Routes.py
-    Style check
+"""
+Handles connection to flask server.
 """
 
 from flask import Flask, request, jsonify
