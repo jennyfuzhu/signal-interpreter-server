@@ -28,7 +28,7 @@ def main():
     signal_interpreter_app.run()
 
 
-def init(): # pylint: disable=missing-function-docstring
+def init():  # pylint: disable=missing-function-docstring
     if __name__ == '__main__':
         main()
 
