@@ -1,30 +1,26 @@
-"""tasks.py, ignoring first parameter by setting it to an underscore"""
+"""tasks.py, using c as Context"""
 import os
-from subprocess import call
 from invoke import task
-from unittest.mock import patch
 
 CURR_DIR = os.path.abspath(os.path.dirname(__file__))
-SRC_DIR = os.path.join(CURR_DIR, "python_step3")
+SRC_DIR = os.path.join(CURR_DIR, "signal_interpreter_server")
 UNIT_TEST_DIR = os.path.join(CURR_DIR, "tests", "unit")
 COV_PATH = os.path.join(CURR_DIR, ".coveragerc")
 
-print(f"Current dir: {CURR_DIR}\nSource dir: {SRC_DIR}\nUnit test dir: {UNIT_TEST_DIR}\nCov path: {COV_PATH}")
-
 @task
-def style(_):
+def style(c):
     """Style """
-    call(f"pycodestyle{SRC_DIR}--ignore=E501", shell=True)
+    c.run(f"pycodestyle {SRC_DIR} --ignore=E501")
 
 
 @task
-def lint(_):
+def lint(c):
     """Lint"""
-    call(f"pylint {SRC_DIR}", shell=True)
+    c.run(f"pylint {SRC_DIR}")
 
 
 @task
-def unit_test(_):
+def unit_test(c):
     """Unit tests"""
-    cmd = f"pytest {UNIT_TEST_DIR} --cov {SRC_DIR} --cov--config={COV_PATH}"
-    call(cmd, shell=True)
+    cmd = f"pytest {UNIT_TEST_DIR} --cov {SRC_DIR} --cov-config={COV_PATH}"
+    c.run(cmd)
