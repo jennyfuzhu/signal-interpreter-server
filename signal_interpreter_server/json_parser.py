@@ -17,7 +17,6 @@ class JsonParser:
         # load the json file and save it to self.data
         with open(file_path, 'r') as my_file:
             self.data = json.load(my_file)
-            print(self.data)
 
     def get_signal_title(self, identifier):
         """Return the title of the identifier"""
@@ -26,4 +25,5 @@ class JsonParser:
         for names in self.data['services']:
             if names['id'] == identifier:
                 self.signal_title = names['title']
-        return self.signal_title
+                return self.signal_title
+        return f"{identifier} not found"

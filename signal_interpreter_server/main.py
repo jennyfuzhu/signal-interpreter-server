@@ -2,8 +2,7 @@
 This is the main program of the signal-interpreter program.
 """
 from argparse import ArgumentParser
-from signal_interpreter_server.json_parser import JsonParser
-from signal_interpreter_server.routes import signal_interpreter_app
+from signal_interpreter_server.routes import json_parser, signal_interpreter_app
 
 
 def parse_arguments():
@@ -20,9 +19,11 @@ def main():
     print(args.file_path)
 
     # instance of json parser class
-    json_parser_class = JsonParser()
+    # json_parser_class = JsonParser()
+    # Du använder JsonParser klassen fel
+    # Du ska instantiera den i routes och sedan använda det objektet.
     # load file is being called
-    json_parser_class.load_file(args.file_path)
+    json_parser.load_file(args.file_path)
 
     signal_interpreter_app.run()
 
