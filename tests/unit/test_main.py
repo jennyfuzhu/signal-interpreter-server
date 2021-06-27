@@ -1,4 +1,5 @@
 """Main.py"""
+import sys
 from unittest.mock import patch
 from signal_interpreter_server.main import main, parse_arguments, ArgumentParser, init
 from signal_interpreter_server.routes import JsonParser, signal_interpreter_app
