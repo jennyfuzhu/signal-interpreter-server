@@ -1,6 +1,4 @@
-"""This is the main program of the signal-interpreter program.
-    Style check 100%
-"""
+"""This is the main program of the signal-interpreter program."""
 from argparse import ArgumentParser
 from routes import signal_interpreter_app, json_parser
 
@@ -13,7 +11,7 @@ def parse_arguments():
     return parser.parse_args()
 
 
-def main():  # pylint: disable=missing-function-docstring
+def main():
     """Main function"""
     args = parse_arguments()
     print(args.file_path)
