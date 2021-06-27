@@ -1,6 +1,5 @@
 """
-Routes.py
-Style check is 100%
+Handles connection to flask server.
 """
 import logging
 from flask import Flask, request, jsonify, abort
