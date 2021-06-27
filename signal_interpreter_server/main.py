@@ -2,8 +2,7 @@
     Style check 100%
 """
 from argparse import ArgumentParser
-from json_parser import JsonParser
-from routes import signal_interpreter_app
+from routes import signal_interpreter_app, json_parser
 
 
 def parse_arguments():
@@ -19,10 +18,7 @@ def main():  # pylint: disable=missing-function-docstring
     args = parse_arguments()
     print(args.file_path)
 
-    # instance of json parser class
-    json_parser_class = JsonParser()
-    # load file is being called
-    json_parser_class.load_file(args.file_path)
+    json_parser.load_file(args.file_path)
 
     signal_interpreter_app.run()
 

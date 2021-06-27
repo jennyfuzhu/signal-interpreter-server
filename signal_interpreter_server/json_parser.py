@@ -23,7 +23,6 @@ class JsonParser:
             with open(file_path, 'r') as my_file:
                 self.data = json.load(my_file)
                 log.info("Loaded json file %s", file_path)
-                print(self.data)
         except FileNotFoundError as err:
             log.exception("Exception occurred. Could not load json file: %s", err)
             raise JsonError from err
@@ -36,7 +35,8 @@ class JsonParser:
             for names in self.data['services']:
                 if names['id'] == identifier:
                     self.signal_title = names['title']
-            return self.signal_title
+                    return self.signal_title
+            return f"{identifier} not found"
         except KeyError as err:
             log.exception("Exception occurred %s", err)
             raise GetTitleError from err
