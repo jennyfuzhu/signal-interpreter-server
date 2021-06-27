@@ -2,3 +2,4 @@
 lesson_2
 lesson_3
 /tests/pytest
+.coverage
