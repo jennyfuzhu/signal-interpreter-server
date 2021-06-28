@@ -1,6 +1,4 @@
-"""test_json_parser.py
-    Lint check 100%
-    """
+"""unit test which test the json_parser script"""
 from unittest.mock import patch, mock_open
 
 import pytest
@@ -28,6 +26,7 @@ def test_get_signal_title():
     json_parser_class_tlt = JsonParser()
     json_parser_class_tlt.data = {'services': [{'title': 'ECU Reset', 'id': '11'}]}
     assert json_parser_class_tlt.get_signal_title('11') == "ECU Reset"
+
 
 # Need at least two signals
 @pytest.mark.parametrize("item, expected_title", [
