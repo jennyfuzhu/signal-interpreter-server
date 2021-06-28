@@ -2,10 +2,8 @@
 
 from unittest.mock import patch
 
-import pytest
-
+import signal_interpreter_server.routes
 from signal_interpreter_server.routes import signal_interpreter_app, JsonParser
-
 
 def test_interpreter_signal_context_manager():
     """Test the interpret signal context manager"""

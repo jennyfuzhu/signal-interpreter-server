@@ -7,15 +7,16 @@ If you have multiple input parameters, the fixture parameter should be put last.
 You therefore do not need to import conftest.py to your unit test.
 """
 
-import sys
-from unittest.mock import patch
 from signal_interpreter_server.json_parser import JsonParser
 import pytest
+import sys
+import os
 
-from signal_interpreter_server.main import main
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
+print(sys.path)
 
 
-@pytest.fixture
+@pytest.fixture()
 def json_parser():
     json_parser = JsonParser()
     return json_parser
