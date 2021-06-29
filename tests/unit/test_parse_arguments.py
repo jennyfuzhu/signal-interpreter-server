@@ -1,6 +1,6 @@
 """test_parse_arguments.py"""
 from unittest.mock import patch
-from signal_interpreter_server.main import parse_arguments, ArgumentParser
+from src.main import parse_arguments, ArgumentParser
 
 
 class MockArgs:  # pylint: disable=too-few-public-methods

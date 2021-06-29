@@ -3,8 +3,8 @@ Handles connection to flask server.
 """
 import logging
 from flask import Flask, request, jsonify, abort
-from json_parser import JsonParser
-from exceptions import GetTitleError
+from src.json_parser import JsonParser
+from src.exceptions import GetTitleError
 log = logging.getLogger(__name__)
 
 json_parser = JsonParser()

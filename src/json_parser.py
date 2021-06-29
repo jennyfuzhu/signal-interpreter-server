@@ -3,7 +3,7 @@
 """
 import json
 import logging
-from exceptions import JsonError, GetTitleError
+from src.exceptions import JsonError, GetTitleError
 
 log = logging.getLogger(__name__)
 

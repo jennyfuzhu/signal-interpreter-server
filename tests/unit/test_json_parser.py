@@ -3,7 +3,7 @@ from unittest.mock import patch, mock_open
 
 import pytest
 
-from signal_interpreter_server.json_parser import JsonParser
+from src.json_parser import JsonParser
 
 INPUT_JSON = '{"json": "json Jsonsson"}'
 OUTPUT_JSON = {"json": "json Jsonsson"}

@@ -1,7 +1,7 @@
 """Main.py"""
 from unittest.mock import patch
-from signal_interpreter_server.main import main, parse_arguments, ArgumentParser, init
-from signal_interpreter_server.routes import JsonParser, signal_interpreter_app
+from src.main import main, parse_arguments, ArgumentParser, init
+from src.routes import JsonParser, signal_interpreter_app
 
 
 class MockArgs:  # pylint: disable=too-few-public-methods

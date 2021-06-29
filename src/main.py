@@ -1,6 +1,6 @@
 """This is the main program of the signal-interpreter program."""
 from argparse import ArgumentParser
-from routes import signal_interpreter_app, json_parser
+from src.routes import signal_interpreter_app, json_parser
 
 
 def parse_arguments():

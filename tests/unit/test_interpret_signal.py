@@ -2,8 +2,8 @@
 
 from unittest.mock import patch
 
-import signal_interpreter_server.routes
-from signal_interpreter_server.routes import signal_interpreter_app, JsonParser
+from src.routes import signal_interpreter_app, JsonParser
+
 
 def test_interpreter_signal_context_manager():
     """Test the interpret signal context manager"""
@@ -16,5 +16,3 @@ def test_interpreter_signal_context_manager():
             response = client.post('/', json=test_payload)
             mock_get_signal_title.assert_called_with('36')
             assert response.get_json() == 'Transfer Data'
-
-

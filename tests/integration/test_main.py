@@ -5,8 +5,8 @@ from unittest.mock import patch
 import logging
 import pytest
 from flask import Flask
-from signal_interpreter_server.routes import signal_interpreter_app
-from signal_interpreter_server.main import main
+from src.routes import signal_interpreter_app
+from src.main import main
 
 log = logging.getLogger(__name__)
 current_dir = os.path.abspath(os.path.dirname(__file__))
