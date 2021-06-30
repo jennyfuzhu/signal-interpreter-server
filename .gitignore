@@ -3,3 +3,5 @@ lesson_2
 lesson_3
 /tests/pytest
 .coverage
+tests/integration/debug.log
+tests/integration/error.log
