@@ -4,7 +4,7 @@ Handles connection to flask server.
 import logging
 from flask import Flask, request, jsonify, abort
 from src.json_parser import JsonParser
-from src.exceptions import GetTitleError
+from src.exceptions import JsonError
 log = logging.getLogger(__name__)
 
 json_parser = JsonParser()
@@ -23,9 +23,9 @@ def interpret_signal():
         log.info("Client sent signal: %s, data", data_sig)
         log.info("Server response title: %s", response)
         return json_return
-    except GetTitleError as err:
-        log.exception("Exception occurred in title: %s", err)
-        abort(404, description="Bad request")
     except KeyError as err:
-        log.warning("Exception occurred in POST: %s", err)
+        log.exception("Exception occurred in title: %s", err)
+        abort(400, description="Bad request")
+    except JsonError as err:
+        log.exception("Exception occurred in post function: %s", err)
         abort(404, description="Page not found")

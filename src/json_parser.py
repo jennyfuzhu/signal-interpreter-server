@@ -1,6 +1,4 @@
-"""Json_parser.py
-    Style check 100%
-"""
+"""Json_parser.py"""
 import json
 import logging
 from src.exceptions import JsonError, GetTitleError

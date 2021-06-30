@@ -8,3 +8,24 @@
 2021-06-29 11:18:29,256 - line 25 - load_file - Loaded json file C:\python_step3\tests\integration\fixtures\test_basic.json
 2021-06-29 11:18:29,259 - line 23 - interpret_signal - Client sent signal: 27, data
 2021-06-29 11:18:29,259 - line 24 - interpret_signal - Server response title: Security Access
+2021-06-30 21:56:53,401 - line 14 - <module> - Current directory: C:\python_step3\tests\integration
+2021-06-30 21:56:53,402 - line 15 - <module> - Fixture path: C:\python_step3\tests\integration\fixtures\test_basic.json
+2021-06-30 21:56:53,415 - line 21 - main - Entering the main function of the program.
+2021-06-30 21:56:53,416 - line 24 - main - Initiating path to file: C:\python_step3\tests\integration\fixtures\test_basic.json
+2021-06-30 21:56:53,417 - line 25 - load_file - Loaded json file C:\python_step3\tests\integration\fixtures\test_basic.json
+2021-06-30 21:56:53,417 - line 30 - main - Staring server.
+2021-06-30 21:56:53,420 - line 32 - main - Program finished.
+2021-06-30 21:56:53,420 - line 34 - test_main_app - Ran the main method
+2021-06-30 21:56:53,421 - line 23 - interpret_signal - Client sent signal: 27, data
+2021-06-30 21:56:53,421 - line 24 - interpret_signal - Server response title: Security Access
+2021-06-30 21:59:56,436 - line 15 - <module> - Current directory: C:\python_step3\tests\integration
+2021-06-30 21:59:56,436 - line 16 - <module> - Fixture path: C:\python_step3\tests\integration\fixtures\test_basic.json
+2021-06-30 21:59:56,448 - line 33 - test_main_app - test_main.py: Entering main method of the signal interpreter program
+2021-06-30 21:59:56,448 - line 21 - main - Entering the main function of the program.
+2021-06-30 21:59:56,449 - line 24 - main - Initiating path to file: C:\python_step3\tests\integration\fixtures\test_basic.json
+2021-06-30 21:59:56,450 - line 25 - load_file - Loaded json file C:\python_step3\tests\integration\fixtures\test_basic.json
+2021-06-30 21:59:56,451 - line 30 - main - Staring server.
+2021-06-30 21:59:56,451 - line 32 - main - Program finished.
+2021-06-30 21:59:56,452 - line 35 - test_main_app - Ran the main method
+2021-06-30 21:59:56,454 - line 23 - interpret_signal - Client sent signal: 27, data
+2021-06-30 21:59:56,454 - line 24 - interpret_signal - Server response title: Security Access

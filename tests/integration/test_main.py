@@ -11,6 +11,7 @@ from src.main import main
 log = logging.getLogger(__name__)
 current_dir = os.path.abspath(os.path.dirname(__file__))
 fixture_path = os.path.join(current_dir, "fixtures", "test_basic.json")
+this_file_name = os.path.basename(__file__)
 log.debug("Current directory: " + current_dir)
 log.debug("Fixture path: " + fixture_path)
 
@@ -29,8 +30,9 @@ def test_main_app(mock):
     """
     signal_interpreter_app.testing = True
     my_app_instance = signal_interpreter_app.test_client()
-
+    log.debug("%s: Entering main method of the signal interpreter program" %this_file_name)
     main()
+    log.debug("Ran the main method")
     mock.assert_called_once()
     with my_app_instance as client:
         test_payload = {"signal": "27"}
