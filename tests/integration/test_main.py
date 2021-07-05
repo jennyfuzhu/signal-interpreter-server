@@ -18,7 +18,7 @@ log.debug("Fixture path: " + fixture_path)
 
 @pytest.mark.parametrize("file, services_ind, id_ind", [
     (os.path.join(current_dir, "fixtures", "test_basic.json"), "services", "id"),
-    (os.path.join(current_dir, "fixture", "test_basic.xml"), "services/service", "@id"),
+    (os.path.join(current_dir, "fixtures", "test_basic.xml"), "services/service", "@id"),
 ])
 # @patch.object(Flask, "run")
 @patch.object(sys, "argv", ["signal_interpreter_server", "--file_path", fixture_path])

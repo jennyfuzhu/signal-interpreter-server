@@ -1,6 +1,7 @@
 """This is the main program of the signal-interpreter program."""
 import logging
 import sys
+import os
 
 from argparse import ArgumentParser
 from src.routes import signal_interpreter_app, json_parser, parse_factory
@@ -19,18 +20,35 @@ def parse_arguments():
     parser.add_argument("--file_path", help='Path to the sdb file')
     return parser.parse_args()
 
+def extract_extension(file_path):
+    filename, extension = os.path.splitext(file_path)
+    return extension
+    """
+    Return the file type
+    :param file_path:
+    :return:
+    """
 
 def main():
     """Main function"""
-    log.info("Entering the main function of the program.")
     args = parse_arguments()
+    log.info("Entering the main function of the program.")
+    db_type = extract_extension(args.file_path)
+    log.info("DB type: " + db_type)
+
     if args.file_path:
         log.info("Initiating path to file: " + args.file_path)
     else:
         print("ERROR: No path specified, terminating program...")
         sys.exit()
 
-    json_parser.load_file(args.file_path)
+
+    parse_factory.set_signal_database_format(db_type)
+    server_parser = parse_factory.get_parser()
+    server_parser.load_file(args.file_path)
+
+    #json_parser.load_file(args.file_path)
+
     log.info("Staring server.")
     signal_interpreter_app.run()
     log.info("Program finished.")

@@ -13,3 +13,13 @@ Traceback (most recent call last):
   File "C:\python_step3\src\json_parser.py", line 21, in load_file
     with open(file_path, 'r') as my_file:
 FileNotFoundError: [Errno 2] No such file or directory: 'C:\\python_step3\\tests\\integration\\fixture\\test_basic.xml'
+2021-07-05 21:34:06,484 - line 25 - load_file - Exception occurred. Could not load json file: [Errno 2] No such file or directory: 'C:\\python_step3\\tests\\integration\\fixture\\test_basic.xml'
+Traceback (most recent call last):
+  File "C:\python_step3\src\json_parser.py", line 21, in load_file
+    with open(file_path, 'r') as my_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\python_step3\\tests\\integration\\fixture\\test_basic.xml'
+2021-07-05 21:35:59,118 - line 25 - load_file - Exception occurred. Could not load json file: [Errno 2] No such file or directory: 'C:\\python_step3\\tests\\integration\\fixture\\test_basic.xml'
+Traceback (most recent call last):
+  File "C:\python_step3\src\json_parser.py", line 21, in load_file
+    with open(file_path, 'r') as my_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\python_step3\\tests\\integration\\fixture\\test_basic.xml'
