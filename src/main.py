@@ -3,10 +3,14 @@ import logging
 import sys
 
 from argparse import ArgumentParser
-from src.routes import signal_interpreter_app, json_parser
+from src.routes import signal_interpreter_app, json_parser, parse_factory
+from src.xml_parser import XmlParser
+from src.json_parser import JsonParser
 
 log = logging.getLogger(__name__)
 
+parse_factory.register_format(".json", JsonParser)
+parse_factory.register_format(".xml", XmlParser)
 
 def parse_arguments():
     """Parse arguments"""

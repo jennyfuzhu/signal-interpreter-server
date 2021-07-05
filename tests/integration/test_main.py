@@ -16,9 +16,14 @@ log.debug("Current directory: " + current_dir)
 log.debug("Fixture path: " + fixture_path)
 
 
+@pytest.mark.parametrize("file, services_ind, id_ind", [
+    (os.path.join(current_dir, "fixtures", "test_basic.json"), "services", "id"),
+    (os.path.join(current_dir, "fixture", "test_basic.xml"), "services/service", "@id"),
+])
+# @patch.object(Flask, "run")
 @patch.object(sys, "argv", ["signal_interpreter_server", "--file_path", fixture_path])
 @patch.object(signal_interpreter_app, "run")
-def test_main_app(mock):
+def test_main_app(parser, file, services_ind, id_ind):
     """
     This function should test the main method for the signal_interpreter_server program
     It should test the full flow from STARTING the server in main.py
@@ -30,11 +35,18 @@ def test_main_app(mock):
     """
     signal_interpreter_app.testing = True
     my_app_instance = signal_interpreter_app.test_client()
-    log.debug("%s: Entering main method of the signal interpreter program" %this_file_name)
-    main()
-    log.debug("Ran the main method")
-    mock.assert_called_once()
+    log.debug("%s: Entering main method of the signal interpreter program" % this_file_name)
     with my_app_instance as client:
-        test_payload = {"signal": "27"}
-        response = client.post("/", json=test_payload)
-        assert response.get_json() == "Security Access"
+        with patch.object(sys, "argv", ["main.main", "--file_path", file]):
+            main()
+            for data in parser.get_parser().data[services_ind]:
+                response = client.post("/", json={"signal":data[id_ind]})
+                assert response.get_json() == data["title"]
+
+    #main()
+    #log.debug("Ran the main method")
+    #mock.assert_called_once()
+    #with my_app_instance as client:
+        #test_payload = {"signal": "27"}
+        #response = client.post("/", json=test_payload)
+        #assert response.get_json() == "Security Access"

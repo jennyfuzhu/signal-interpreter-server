@@ -29,3 +29,64 @@
 2021-06-30 21:59:56,452 - line 35 - test_main_app - Ran the main method
 2021-06-30 21:59:56,454 - line 23 - interpret_signal - Client sent signal: 27, data
 2021-06-30 21:59:56,454 - line 24 - interpret_signal - Server response title: Security Access
+2021-07-05 21:19:02,316 - line 15 - <module> - Current directory: C:\python_step3\tests\integration
+2021-07-05 21:19:02,316 - line 16 - <module> - Fixture path: C:\python_step3\tests\integration\fixtures\test_basic.json
+2021-07-05 21:19:22,484 - line 15 - <module> - Current directory: C:\python_step3\tests\integration
+2021-07-05 21:19:22,487 - line 16 - <module> - Fixture path: C:\python_step3\tests\integration\fixtures\test_basic.json
+2021-07-05 21:19:22,509 - line 33 - test_main_app - test_main.py: Entering main method of the signal interpreter program
+2021-07-05 21:19:22,509 - line 25 - main - Entering the main function of the program.
+2021-07-05 21:19:22,519 - line 28 - main - Initiating path to file: C:\python_step3\tests\integration\fixtures\test_basic.json
+2021-07-05 21:19:22,520 - line 23 - load_file - Loaded json file C:\python_step3\tests\integration\fixtures\test_basic.json
+2021-07-05 21:19:22,521 - line 34 - main - Staring server.
+2021-07-05 21:19:22,522 - line 36 - main - Program finished.
+2021-07-05 21:19:22,522 - line 35 - test_main_app - Ran the main method
+2021-07-05 21:24:22,453 - line 15 - <module> - Current directory: C:\python_step3\tests\integration
+2021-07-05 21:24:22,454 - line 16 - <module> - Fixture path: C:\python_step3\tests\integration\fixtures\test_basic.json
+2021-07-05 21:29:54,871 - line 15 - <module> - Current directory: C:\python_step3\tests\integration
+2021-07-05 21:29:54,871 - line 16 - <module> - Fixture path: C:\python_step3\tests\integration\fixtures\test_basic.json
+2021-07-05 21:29:54,902 - line 38 - test_main_app - test_main.py: Entering main method of the signal interpreter program
+2021-07-05 21:29:54,902 - line 25 - main - Entering the main function of the program.
+2021-07-05 21:29:54,903 - line 28 - main - Initiating path to file: C:\python_step3\tests\integration\fixtures\test_basic.json
+2021-07-05 21:29:54,904 - line 23 - load_file - Loaded json file C:\python_step3\tests\integration\fixtures\test_basic.json
+2021-07-05 21:29:54,904 - line 34 - main - Staring server.
+2021-07-05 21:29:54,904 - line 36 - main - Program finished.
+2021-07-05 21:29:54,911 - line 38 - test_main_app - test_main.py: Entering main method of the signal interpreter program
+2021-07-05 21:29:54,911 - line 25 - main - Entering the main function of the program.
+2021-07-05 21:29:54,911 - line 28 - main - Initiating path to file: C:\python_step3\tests\integration\fixture\test_basic.xml
+2021-07-05 21:29:54,911 - line 25 - load_file - Exception occurred. Could not load json file: [Errno 2] No such file or directory: 'C:\\python_step3\\tests\\integration\\fixture\\test_basic.xml'
+Traceback (most recent call last):
+  File "C:\python_step3\src\json_parser.py", line 21, in load_file
+    with open(file_path, 'r') as my_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\python_step3\\tests\\integration\\fixture\\test_basic.xml'
+2021-07-05 21:31:32,169 - line 15 - <module> - Current directory: C:\python_step3\tests\integration
+2021-07-05 21:31:32,169 - line 16 - <module> - Fixture path: C:\python_step3\tests\integration\fixtures\test_basic.json
+2021-07-05 21:31:32,190 - line 38 - test_main_app - test_main.py: Entering main method of the signal interpreter program
+2021-07-05 21:31:32,190 - line 25 - main - Entering the main function of the program.
+2021-07-05 21:31:32,197 - line 28 - main - Initiating path to file: C:\python_step3\tests\integration\fixtures\test_basic.json
+2021-07-05 21:31:32,199 - line 23 - load_file - Loaded json file C:\python_step3\tests\integration\fixtures\test_basic.json
+2021-07-05 21:31:32,199 - line 34 - main - Staring server.
+2021-07-05 21:31:32,199 - line 36 - main - Program finished.
+2021-07-05 21:31:32,210 - line 38 - test_main_app - test_main.py: Entering main method of the signal interpreter program
+2021-07-05 21:31:32,211 - line 25 - main - Entering the main function of the program.
+2021-07-05 21:31:32,211 - line 28 - main - Initiating path to file: C:\python_step3\tests\integration\fixture\test_basic.xml
+2021-07-05 21:31:32,211 - line 25 - load_file - Exception occurred. Could not load json file: [Errno 2] No such file or directory: 'C:\\python_step3\\tests\\integration\\fixture\\test_basic.xml'
+Traceback (most recent call last):
+  File "C:\python_step3\src\json_parser.py", line 21, in load_file
+    with open(file_path, 'r') as my_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\python_step3\\tests\\integration\\fixture\\test_basic.xml'
+2021-07-05 21:32:45,447 - line 15 - <module> - Current directory: C:\python_step3\tests\integration
+2021-07-05 21:32:45,447 - line 16 - <module> - Fixture path: C:\python_step3\tests\integration\fixtures\test_basic.json
+2021-07-05 21:32:45,473 - line 38 - test_main_app - test_main.py: Entering main method of the signal interpreter program
+2021-07-05 21:32:45,473 - line 25 - main - Entering the main function of the program.
+2021-07-05 21:32:45,473 - line 28 - main - Initiating path to file: C:\python_step3\tests\integration\fixtures\test_basic.json
+2021-07-05 21:32:45,478 - line 23 - load_file - Loaded json file C:\python_step3\tests\integration\fixtures\test_basic.json
+2021-07-05 21:32:45,478 - line 34 - main - Staring server.
+2021-07-05 21:32:45,479 - line 36 - main - Program finished.
+2021-07-05 21:32:45,484 - line 38 - test_main_app - test_main.py: Entering main method of the signal interpreter program
+2021-07-05 21:32:45,484 - line 25 - main - Entering the main function of the program.
+2021-07-05 21:32:45,484 - line 28 - main - Initiating path to file: C:\python_step3\tests\integration\fixture\test_basic.xml
+2021-07-05 21:32:45,484 - line 25 - load_file - Exception occurred. Could not load json file: [Errno 2] No such file or directory: 'C:\\python_step3\\tests\\integration\\fixture\\test_basic.xml'
+Traceback (most recent call last):
+  File "C:\python_step3\src\json_parser.py", line 21, in load_file
+    with open(file_path, 'r') as my_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\python_step3\\tests\\integration\\fixture\\test_basic.xml'
