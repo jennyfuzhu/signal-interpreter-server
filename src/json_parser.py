@@ -15,8 +15,6 @@ class JsonParser:
 
     def load_file(self, file_path):
         """Load files with the path to the file as an argument"""
-        # open the json file
-        # load the json file and save it to self.data
         try:
             with open(file_path, 'r') as my_file:
                 self.data = json.load(my_file)
@@ -27,8 +25,6 @@ class JsonParser:
 
     def get_signal_title(self, identifier):
         """Return the title of the identifier"""
-        # loop through all services in self.data
-        # if the service ID is the identifier, return the title
         try:
             for names in self.data['services']:
                 if names['id'] == identifier:

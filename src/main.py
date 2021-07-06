@@ -16,7 +16,6 @@ parse_factory.register_format(".xml", XmlParser)
 def parse_arguments():
     """Parse arguments"""
     parser = ArgumentParser()
-    # the path to the signal database file
     parser.add_argument("--file_path", help='Path to the sdb file')
     return parser.parse_args()
 

@@ -42,11 +42,3 @@ def test_main_app(parser, file, services_ind, id_ind):
             for data in parser.get_parser().data[services_ind]:
                 response = client.post("/", json={"signal":data[id_ind]})
                 assert response.get_json() == data["title"]
-
-    #main()
-    #log.debug("Ran the main method")
-    #mock.assert_called_once()
-    #with my_app_instance as client:
-        #test_payload = {"signal": "27"}
-        #response = client.post("/", json=test_payload)
-        #assert response.get_json() == "Security Access"

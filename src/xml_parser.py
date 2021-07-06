@@ -13,12 +13,7 @@ class XmlParser:
         self.data = None
 
     def load_file(self, file_path):
-        """
-        Loading an XML-file and converting it to a dictionary
-        :param file_path:
-        :return:
-
-        """
+        """Loading an XML-file and converting it to a dictionary"""
         tree = ET.parse(file_path)
         data = tree.getroot()
         xml_string = ET.tostring(data, encoding="utf-8", method="xml")
