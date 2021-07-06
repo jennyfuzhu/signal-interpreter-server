@@ -1,3 +1,4 @@
+# pylint: disable=missing-function-docstring
 """ Integration test for main"""
 import os
 import sys

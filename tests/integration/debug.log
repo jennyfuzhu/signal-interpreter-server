@@ -1,0 +1,15 @@
+2021-07-06 20:53:23,919 - line 16 - <module> - Current directory: C:\python_step3\tests\integration
+2021-07-06 20:53:23,919 - line 17 - <module> - Fixture path: C:\python_step3\tests\integration\fixtures\test_basic.json
+2021-07-06 20:53:23,943 - line 39 - test_main_app - test_main.py: Entering main method of the signal interpreter program
+2021-07-06 20:53:23,943 - line 34 - main - Entering the main function of the program.
+2021-07-06 20:53:23,944 - line 37 - main - DB type: .json
+2021-07-06 20:53:23,944 - line 40 - main - Initiating path to file: C:\python_step3\tests\integration\fixtures\test_basic.json
+2021-07-06 20:53:23,944 - line 21 - load_file - Loaded json file C:\python_step3\tests\integration\fixtures\test_basic.json
+2021-07-06 20:53:23,945 - line 52 - main - Staring server.
+2021-07-06 20:53:23,945 - line 54 - main - Program finished.
+2021-07-06 20:53:23,951 - line 39 - test_main_app - test_main.py: Entering main method of the signal interpreter program
+2021-07-06 20:53:23,951 - line 34 - main - Entering the main function of the program.
+2021-07-06 20:53:23,952 - line 37 - main - DB type: .xml
+2021-07-06 20:53:23,952 - line 40 - main - Initiating path to file: C:\python_step3\tests\integration\fixtures\test_basic.xml
+2021-07-06 20:53:23,953 - line 52 - main - Staring server.
+2021-07-06 20:53:23,954 - line 54 - main - Program finished.

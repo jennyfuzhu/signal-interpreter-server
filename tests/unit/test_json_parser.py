@@ -1,3 +1,4 @@
+# pylint: disable=missing-function-docstring
 """unit test which test the json_parser script"""
 from unittest.mock import patch, mock_open
 

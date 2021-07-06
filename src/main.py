@@ -16,7 +16,7 @@ parse_factory.register_format(".xml", XmlParser)
 def parse_arguments():
     """Parse arguments"""
     parser = ArgumentParser()
-    parser.add_argument("--file_path", help='Path to the sdb file')
+    parser.add_argument("-f","--file_path", help='Path to the sdb file')
     args =parser.parse_args()
     return args.file_path
 

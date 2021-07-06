@@ -1,11 +1,11 @@
 """
-tasks.py, ignoring first parameter by setting it to an underscore
+tasks.py, tasks to perform, style lint and test
+ignoring first parameter by setting it to an underscore
 The possibility to invoke integration tests is among other things available here
 """
 import os
 from subprocess import call
 from invoke import task
-from unittest.mock import patch
 
 CURR_DIR = os.path.abspath(os.path.dirname(__file__))
 SRC_DIR = os.path.join(CURR_DIR, "python_step3")
@@ -25,6 +25,7 @@ def style(_):
 
 @task
 def style_test(_):
+    """Style test check"""
     call(f"pycodestyle{TESTS_DIR}--ignore=E501", shell=True)
 
 

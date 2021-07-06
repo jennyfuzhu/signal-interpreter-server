@@ -1,9 +1,6 @@
 # pylint: disable=missing-function-docstring
 # pylint: disable=protected-access
 import logging
-import pytest
-from src.json_parser import JsonParser
-from src.xml_parser import XmlParser
 from src.parser_factory import ParseFactory
 
 log = logging.getLogger(__name__)
@@ -36,4 +33,3 @@ def test_get_parser():
     parse_factory._signal_database_format = "EXTENSION"
     assert parse_factory.get_parser() == MockParser
     log.debug("Exiting %s unit test:" % test_get_parser.__name__)
-

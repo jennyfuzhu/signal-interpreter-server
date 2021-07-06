@@ -13,3 +13,6 @@ class JsonError(Exception):
 class GetTitleError(Exception):
     """Get title error"""
 
+class XmlError(Exception):
+    """Xml error"""
+
