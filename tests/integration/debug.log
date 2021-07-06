@@ -28,3 +28,28 @@
 2021-07-05 22:05:57,620 - line 40 - main - Initiating path to file: C:\python_step3\tests\integration\fixtures\test_basic.xml
 2021-07-05 22:05:57,620 - line 52 - main - Staring server.
 2021-07-05 22:05:57,620 - line 54 - main - Program finished.
+2021-07-06 17:50:41,498 - line 15 - <module> - Current directory: C:\python_step3\tests\integration
+2021-07-06 17:50:41,499 - line 16 - <module> - Fixture path: C:\python_step3\tests\integration\fixtures\test_basic.json
+2021-07-06 17:50:41,526 - line 38 - test_main_app - test_main.py: Entering main method of the signal interpreter program
+2021-07-06 17:50:41,526 - line 34 - main - Entering the main function of the program.
+2021-07-06 17:50:41,527 - line 37 - main - DB type: .json
+2021-07-06 17:50:41,527 - line 40 - main - Initiating path to file: C:\python_step3\tests\integration\fixtures\test_basic.json
+2021-07-06 17:50:41,743 - line 38 - test_main_app - test_main.py: Entering main method of the signal interpreter program
+2021-07-06 17:50:41,743 - line 34 - main - Entering the main function of the program.
+2021-07-06 17:50:41,744 - line 37 - main - DB type: .xml
+2021-07-06 17:50:41,744 - line 40 - main - Initiating path to file: C:\python_step3\tests\integration\fixtures\test_basic.xml
+2021-07-06 17:51:14,460 - line 15 - <module> - Current directory: C:\python_step3\tests\integration
+2021-07-06 17:51:14,461 - line 16 - <module> - Fixture path: C:\python_step3\tests\integration\fixtures\test_basic.json
+2021-07-06 17:51:14,485 - line 38 - test_main_app - test_main.py: Entering main method of the signal interpreter program
+2021-07-06 17:51:14,486 - line 34 - main - Entering the main function of the program.
+2021-07-06 17:51:14,487 - line 37 - main - DB type: .json
+2021-07-06 17:51:14,487 - line 40 - main - Initiating path to file: C:\python_step3\tests\integration\fixtures\test_basic.json
+2021-07-06 17:51:14,488 - line 21 - load_file - Loaded json file C:\python_step3\tests\integration\fixtures\test_basic.json
+2021-07-06 17:51:14,488 - line 52 - main - Staring server.
+2021-07-06 17:51:14,489 - line 54 - main - Program finished.
+2021-07-06 17:51:14,495 - line 38 - test_main_app - test_main.py: Entering main method of the signal interpreter program
+2021-07-06 17:51:14,496 - line 34 - main - Entering the main function of the program.
+2021-07-06 17:51:14,496 - line 37 - main - DB type: .xml
+2021-07-06 17:51:14,497 - line 40 - main - Initiating path to file: C:\python_step3\tests\integration\fixtures\test_basic.xml
+2021-07-06 17:51:14,502 - line 52 - main - Staring server.
+2021-07-06 17:51:14,503 - line 54 - main - Program finished.

@@ -17,7 +17,8 @@ def parse_arguments():
     """Parse arguments"""
     parser = ArgumentParser()
     parser.add_argument("--file_path", help='Path to the sdb file')
-    return parser.parse_args()
+    args =parser.parse_args()
+    return args.file_path
 
 def extract_extension(file_path):
     filename, extension = os.path.splitext(file_path)
@@ -30,13 +31,13 @@ def extract_extension(file_path):
 
 def main():
     """Main function"""
-    args = parse_arguments()
     log.info("Entering the main function of the program.")
-    db_type = extract_extension(args.file_path)
+    db_path = parse_arguments()
+    db_type = extract_extension(db_path)
     log.info("DB type: " + db_type)
 
-    if args.file_path:
-        log.info("Initiating path to file: " + args.file_path)
+    if db_path:
+        log.info("Initiating path to file: " + db_path)
     else:
         print("ERROR: No path specified, terminating program...")
         sys.exit()
@@ -44,7 +45,7 @@ def main():
 
     parse_factory.set_signal_database_format(db_type)
     server_parser = parse_factory.get_parser()
-    server_parser.load_file(args.file_path)
+    server_parser.load_file(db_path)
 
     #json_parser.load_file(args.file_path)
 
