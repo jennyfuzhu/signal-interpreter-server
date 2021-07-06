@@ -12,8 +12,10 @@ SRC_DIR = os.path.join(CURR_DIR, "python_step3")
 UNIT_TEST_DIR = os.path.join(CURR_DIR, "tests", "unit")
 COV_PATH = os.path.join(CURR_DIR, ".coveragerc")
 INTEGRATION_DIR = os.path.join(CURR_DIR, "tests", "integration")
+TESTS_DIR = os.path.join(CURR_DIR, "tests")
 
 print(f"Current dir: {CURR_DIR}\nSource dir: {SRC_DIR}\nUnit test dir: {UNIT_TEST_DIR}\nCov path: {COV_PATH}")
+
 
 @task
 def style(_):
@@ -22,9 +24,19 @@ def style(_):
 
 
 @task
+def style_test(_):
+    call(f"pycodestyle{TESTS_DIR}--ignore=E501", shell=True)
+
+
+@task
 def lint(_):
     """Lint"""
     call(f"pylint {SRC_DIR}", shell=True)
+
+
+@task
+def lint_test(_):
+    call(f"pylint {TESTS_DIR}", shell=True)
 
 
 @task
