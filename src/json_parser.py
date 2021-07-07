@@ -11,7 +11,6 @@ class JsonParser:
 
     def __init__(self):
         self.data = None
-        self.signal_title = ""
 
     def load_file(self, file_path):
         """Load files with the path to the file as an argument"""
@@ -25,12 +24,9 @@ class JsonParser:
 
     def get_signal_title(self, identifier):
         """Return the title of the identifier"""
-        try:
-            for names in self.data['services']:
-                if names['id'] == identifier:
-                    self.signal_title = names['title']
-                    return self.signal_title
-            return f"{identifier} not found"
-        except KeyError as err:
-            log.exception("Exception occurred %s", err)
-            raise GetTitleError from err
+        for names in self.data['services']:
+            if names['id'] == identifier:
+                signal_title = names['title']
+                return signal_title
+        return f"{identifier} not found"
+

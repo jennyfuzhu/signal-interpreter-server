@@ -1,20 +1,10 @@
-2021-07-06 22:16:31,051 - line 32 - interpret_signal - Exception occurred in title: 'signal'
+2021-07-07 07:49:09,037 - line 29 - interpret_signal - Exception occurred in title: 'signal'
 Traceback (most recent call last):
-  File "C:\python_step3\src\routes.py", line 26, in interpret_signal
-    response = parser.get_signal_title(data['signal'])
+  File "C:\python_step3\src\routes.py", line 25, in interpret_signal
+    response = json_parser.get_signal_title(data['signal'])
 KeyError: 'signal'
-2021-07-06 22:21:25,257 - line 30 - interpret_signal - Exception occurred in title: 'signal'
+2021-07-07 08:00:28,445 - line 29 - interpret_signal - Exception occurred in title: 'signal'
 Traceback (most recent call last):
-  File "C:\python_step3\src\routes.py", line 26, in interpret_signal
-    response = parser.get_signal_title(data['signal'])
-KeyError: 'signal'
-2021-07-06 22:30:05,456 - line 30 - interpret_signal - Exception occurred in title: 'signal'
-Traceback (most recent call last):
-  File "C:\python_step3\src\routes.py", line 26, in interpret_signal
-    response = parser.get_signal_title(data['signal'])
-KeyError: 'signal'
-2021-07-06 22:30:19,506 - line 30 - interpret_signal - Exception occurred in title: 'signal'
-Traceback (most recent call last):
-  File "C:\python_step3\src\routes.py", line 26, in interpret_signal
-    response = parser.get_signal_title(data['signal'])
+  File "C:\python_step3\src\routes.py", line 25, in interpret_signal
+    response = json_parser.get_signal_title(data['signal'])
 KeyError: 'signal'

@@ -1,102 +1,12 @@
-2021-07-06 20:38:25,189 - line 17 - test_register_format - Entering test_register_format unit test:
-2021-07-06 20:38:25,189 - line 20 - test_register_format - Exiting test_register_format unit test
-2021-07-06 20:42:18,447 - line 24 - test_register_format - Entering test_register_format unit test:
-2021-07-06 20:42:18,448 - line 27 - test_register_format - Exiting test_register_format unit test
-2021-07-06 20:42:18,571 - line 24 - test_register_format - Entering test_register_format unit test:
-2021-07-06 20:42:18,571 - line 27 - test_register_format - Exiting test_register_format unit test
-2021-07-06 20:42:39,381 - line 17 - test_set_signal_database_format - Entering test_set_signal_database_format unit test
-2021-07-06 20:42:39,382 - line 20 - test_set_signal_database_format - Existing test_set_signal_database_format unit test
-2021-07-06 20:42:39,385 - line 24 - test_register_format - Entering test_register_format unit test:
-2021-07-06 20:42:39,386 - line 27 - test_register_format - Exiting test_register_format unit test
-2021-07-06 20:47:54,071 - line 18 - test_set_signal_database_format - Entering test_set_signal_database_format unit test
-2021-07-06 20:47:54,072 - line 21 - test_set_signal_database_format - Existing test_set_signal_database_format unit test
-2021-07-06 20:47:54,076 - line 26 - test_register_format - Entering test_register_format unit test:
-2021-07-06 20:47:54,076 - line 29 - test_register_format - Exiting test_register_format unit test
-2021-07-06 20:47:54,079 - line 34 - test_get_parser - Entering test_get_parser unit test:
-2021-07-06 20:47:54,216 - line 42 - test_get_parser_invalid_extension - Entering test_get_parser_invalid_extension unit test:
-2021-07-06 20:47:54,216 - line 45 - test_get_parser_invalid_extension - Exiting test_get_parser_invalid_extension unit test
-2021-07-06 20:48:13,223 - line 18 - test_set_signal_database_format - Entering test_set_signal_database_format unit test
-2021-07-06 20:48:13,223 - line 21 - test_set_signal_database_format - Existing test_set_signal_database_format unit test
-2021-07-06 20:48:13,226 - line 26 - test_register_format - Entering test_register_format unit test:
-2021-07-06 20:48:13,226 - line 29 - test_register_format - Exiting test_register_format unit test
-2021-07-06 20:48:13,229 - line 34 - test_get_parser - Entering test_get_parser unit test:
-2021-07-06 20:48:13,229 - line 38 - test_get_parser - Exiting test_get_parser unit test:
-2021-07-06 20:48:13,232 - line 42 - test_get_parser_invalid_extension - Entering test_get_parser_invalid_extension unit test:
-2021-07-06 20:49:16,253 - line 18 - test_set_signal_database_format - Entering test_set_signal_database_format unit test
-2021-07-06 20:49:16,254 - line 21 - test_set_signal_database_format - Existing test_set_signal_database_format unit test
-2021-07-06 20:49:16,256 - line 26 - test_register_format - Entering test_register_format unit test:
-2021-07-06 20:49:16,256 - line 29 - test_register_format - Exiting test_register_format unit test
-2021-07-06 20:49:16,259 - line 34 - test_get_parser - Entering test_get_parser unit test:
-2021-07-06 20:49:16,259 - line 38 - test_get_parser - Exiting test_get_parser unit test:
-2021-07-06 20:59:49,273 - line 34 - main - Entering the main function of the program.
-2021-07-06 21:00:29,145 - line 34 - main - Entering the main function of the program.
-2021-07-06 21:00:53,014 - line 34 - main - Entering the main function of the program.
-2021-07-06 21:01:45,260 - line 34 - main - Entering the main function of the program.
-2021-07-06 21:12:09,847 - line 34 - main - Entering the main function of the program.
-2021-07-06 21:12:27,475 - line 34 - main - Entering the main function of the program.
-2021-07-06 21:13:24,059 - line 34 - main - Entering the main function of the program.
-2021-07-06 21:14:35,170 - line 34 - main - Entering the main function of the program.
-2021-07-06 21:19:34,047 - line 34 - main - Entering the main function of the program.
-2021-07-06 21:23:32,588 - line 34 - main - Entering the main function of the program.
-2021-07-06 21:42:54,826 - line 34 - main - Entering the main function of the program.
-2021-07-06 21:42:54,827 - line 37 - main - DB type: .json
-2021-07-06 21:42:54,827 - line 40 - main - Initiating path to file: database/sdb.json
-2021-07-06 21:42:54,829 - line 52 - main - Staring server.
-2021-07-06 21:42:54,830 - line 54 - main - Program finished.
-2021-07-06 21:43:10,213 - line 34 - main - Entering the main function of the program.
-2021-07-06 21:43:10,214 - line 37 - main - DB type: .json
-2021-07-06 21:43:10,214 - line 40 - main - Initiating path to file: database/sdb.json
-2021-07-06 21:43:10,215 - line 52 - main - Staring server.
-2021-07-06 21:43:10,216 - line 54 - main - Program finished.
-2021-07-06 21:45:55,383 - line 34 - main - Entering the main function of the program.
-2021-07-06 21:45:55,383 - line 37 - main - DB type: .json
-2021-07-06 21:45:55,384 - line 40 - main - Initiating path to file: signal_database.json
-2021-07-06 21:45:55,385 - line 52 - main - Staring server.
-2021-07-06 21:45:55,386 - line 54 - main - Program finished.
-2021-07-06 21:50:43,793 - line 34 - main - Entering the main function of the program.
-2021-07-06 21:50:43,793 - line 37 - main - DB type: .json
-2021-07-06 21:50:43,794 - line 40 - main - Initiating path to file: signal_database.json
-2021-07-06 21:50:43,795 - line 52 - main - Staring server.
-2021-07-06 21:50:43,795 - line 54 - main - Program finished.
-2021-07-06 21:50:43,797 - line 28 - interpret_signal - Client sent signal: 11, data
-2021-07-06 21:50:43,798 - line 29 - interpret_signal - Server response title: <MagicMock name='get_parser().get_signal_title()' id='1779841298048'>
-2021-07-06 22:02:13,286 - line 34 - main - Entering the main function of the program.
-2021-07-06 22:02:13,287 - line 37 - main - DB type: .json
-2021-07-06 22:02:13,287 - line 40 - main - Initiating path to file: signal_database.json
-2021-07-06 22:02:13,288 - line 52 - main - Staring server.
-2021-07-06 22:02:13,289 - line 54 - main - Program finished.
-2021-07-06 22:02:13,290 - line 28 - interpret_signal - Client sent signal: 11, data
-2021-07-06 22:02:13,290 - line 29 - interpret_signal - Server response title: <MagicMock name='get_parser().get_signal_title()' id='2042174736176'>
-2021-07-06 22:02:13,622 - line 64 - test_extract_extension - Entering test_main.py unit test
-2021-07-06 22:02:13,625 - line 64 - test_extract_extension - Entering test_main.py unit test
-2021-07-06 22:03:31,714 - line 15 - test_set_signal_database_format - Entering test_set_signal_database_format unit test
-2021-07-06 22:03:31,715 - line 18 - test_set_signal_database_format - Existing test_set_signal_database_format unit test
-2021-07-06 22:03:31,717 - line 23 - test_register_format - Entering test_register_format unit test:
-2021-07-06 22:03:31,717 - line 26 - test_register_format - Exiting test_register_format unit test
-2021-07-06 22:03:31,720 - line 31 - test_get_parser - Entering test_get_parser unit test:
-2021-07-06 22:03:31,720 - line 35 - test_get_parser - Exiting test_get_parser unit test:
-2021-07-06 22:16:31,035 - line 28 - interpret_signal - Client sent signal: 11, data
-2021-07-06 22:16:31,036 - line 29 - interpret_signal - Server response title: ECU Reset
-2021-07-06 22:16:31,051 - line 32 - interpret_signal - Exception occurred in title: 'signal'
+2021-07-07 07:49:09,017 - line 26 - interpret_signal - Server response title: 
+2021-07-07 07:49:09,037 - line 29 - interpret_signal - Exception occurred in title: 'signal'
 Traceback (most recent call last):
-  File "C:\python_step3\src\routes.py", line 26, in interpret_signal
-    response = parser.get_signal_title(data['signal'])
+  File "C:\python_step3\src\routes.py", line 25, in interpret_signal
+    response = json_parser.get_signal_title(data['signal'])
 KeyError: 'signal'
-2021-07-06 22:21:25,247 - line 27 - interpret_signal - Server response title: ECU Reset
-2021-07-06 22:21:25,257 - line 30 - interpret_signal - Exception occurred in title: 'signal'
+2021-07-07 08:00:28,435 - line 26 - interpret_signal - Server response title: 
+2021-07-07 08:00:28,445 - line 29 - interpret_signal - Exception occurred in title: 'signal'
 Traceback (most recent call last):
-  File "C:\python_step3\src\routes.py", line 26, in interpret_signal
-    response = parser.get_signal_title(data['signal'])
-KeyError: 'signal'
-2021-07-06 22:30:05,445 - line 27 - interpret_signal - Server response title: ECU Reset
-2021-07-06 22:30:05,456 - line 30 - interpret_signal - Exception occurred in title: 'signal'
-Traceback (most recent call last):
-  File "C:\python_step3\src\routes.py", line 26, in interpret_signal
-    response = parser.get_signal_title(data['signal'])
-KeyError: 'signal'
-2021-07-06 22:30:19,497 - line 27 - interpret_signal - Server response title: ECU Reset
-2021-07-06 22:30:19,506 - line 30 - interpret_signal - Exception occurred in title: 'signal'
-Traceback (most recent call last):
-  File "C:\python_step3\src\routes.py", line 26, in interpret_signal
-    response = parser.get_signal_title(data['signal'])
+  File "C:\python_step3\src\routes.py", line 25, in interpret_signal
+    response = json_parser.get_signal_title(data['signal'])
 KeyError: 'signal'
